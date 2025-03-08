@@ -1,9 +1,3 @@
-# recipes_rating
-Final Project for DSC80 at UCSD.
-
-Dataset used: Recipes and Ratings.
-
-
 # Recipes, Ratings, and a little case of "Is More Less?"
 
 
@@ -27,3 +21,7 @@ Dataset used: Recipes and Ratings.
 
 
 ---
+
+
+# recipes_rating
+Final Project for DSC80 at UCSD.
