@@ -1,5 +1,7 @@
 # Recipes, Ratings, and a little case of "Is More Less?"
+Final Project for DSC80 at UCSD.
 
+(potential title) easy work makes the recipe work (or does it?): an investigation into recipe ratings and the influence of perceived easiness.
 
 ## Introduction
 
@@ -7,7 +9,7 @@
 
 ---
 
-## Cleaning and EDA
+## Data Cleaning and Explanatory Data Analysis
 
 [TO DO]
 
@@ -22,6 +24,10 @@
 
 ---
 
+## Framing a Prediction Problem
 
-# recipes_rating
-Final Project for DSC80 at UCSD.
+## Baseline Model
+
+## Final Model
+
+## Fairness Analysis
