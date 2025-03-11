@@ -1,7 +1,5 @@
-# Recipes, Ratings, and a little case of "Is More Less?"
+# Easy Work Makes the Recipe Work (Or Does It?): An Exploration into Recipes and the Influence of Perceived Easiness
 Final Project for DSC80 at UCSD.
-
-(potential title) easy work makes the recipe work (or does it?): an investigation into recipe ratings and the influence of perceived easiness.
 
 ## Introduction
 
