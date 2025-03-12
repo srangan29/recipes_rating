@@ -1,5 +1,5 @@
 remote_theme: pages-themes/dinky@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-title: Recipes, Ratings, and a little case of “Is More Less?”
-description: [A short description of your site's purpose]
+title: Easy Work Makes the Recipe Work (Or Does It?): An Exploration into Recipes and the Influence of Perceived Easiness
+description: Final Project for DSC80 at UCSD.
