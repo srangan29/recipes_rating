@@ -23,6 +23,7 @@ The dataset utilized in my exploration of these ideas consists of recipes and re
 The initial data has been given split into two datasets: recipe and interactions.
 `recipe` is a dataset that
 `recipe`'s columns consist of the following: 
+
 | Column Name | Description |
 | ----------- | ----------- |
 | `name` | Recipe name |
@@ -37,6 +38,7 @@ The initial data has been given split into two datasets: recipe and interactions
 | `description` | User-provided description |
 
 `interactions`'s columns consist of the following:
+
 | Column Name | Description |
 | ----------- | ----------- |
 | `user_id` | User ID |
