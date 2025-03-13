@@ -1,4 +1,6 @@
 # Easy Work Makes the Recipe Work (Or Does It?): An Exploration into Recipes and the Influence of Perceived Easiness
+Author: Sahana Rangan
+
 Final Project for DSC80 at UCSD.
 
 ## Introduction
@@ -6,18 +8,12 @@ Final Project for DSC80 at UCSD.
 What kind of people do you think are the ones looking up recipes online?
 Likely people who don't have as much experience cooking, right? Otherwise, they wouldn't need a recipe online. 
 For this reason, it makes a lot of sense that there are many recipes tagged as "easy" on food.com, if only to grab the attention of all of us looking up recipes for quick meals. 
+But are all these recipes dubbed as easy really as easy as they say? 
+For example, there are many recipes out there focusing on how you can make a cake or cookie in 3-ingredients or less, in 5-minutes or less. Since it can be hard to get many ingredients on short notice, especially if you just want something simple, these recipes have attracted a lot of attention.
+Is this then what results in their higher ratings? Or is there something else?
 
-There's many recipes out there focusing on how you can make a cake or cookie in 3-ingredients or less. Since it can be hard to get many ingredients on short notice, especially if you just want something simple, these recipes have attracted a lot of attention.
-However, compared to more ingredient items, is it true that the rating would generally be higher for recipes with higher ingredient counts? 
-I intend to explore this idea and see if it truly is believed by people on these recipe websites rating the foods that more ingredients = higher deserved rating. 
-
-Cost effectiveness of getting to buy less ingredients has always been an appealing part of those types of recipes, but low cost does not good food make (or so many may believe).
-
-As someone who personally has been scolded by their mother for not being able to cook (or refusing to do so), I've seen the appeal of all the Tiktoks or Youtube shorts with the ==easy== 5-ingredient make in 5 minute recipes.
-So, I became curious about how food.com had food tags including "easy"! 
-
-In all of these things, I wish to explore just what allows people to promote their recipes as easy or not, whether it's number of ingredients or something else not as apparent!
-
+All of these things have resulted in me wondering what factors ultimately lead and/or contribute to each recipe on food.com's authors' declaring and tagging their recipes' as easy, whether it's number of ingredients or something else not as apparent. Mainly, centering on this question for my project, **is there evidence that there are differences between a recipe tagged 'easy' versus a recipe not tagged easy?**
+ 
 The dataset utilized in my exploration of these ideas consists of recipes and reviews that have been posted on food.com since 2008.
 
 The initial data has been given split into two datasets: `recipe` and 
@@ -48,12 +44,10 @@ The initial data has been given split into two datasets: `recipe` and
 | `date` | Date of interaction |
 | `rating` | Rating given |
 | `review` | Review text |
-
 ---
 
 ## Data Cleaning and Explanatory Data Analysis
-
-[TO DO]
+### Data Cleaning
 1. Left merge the recipes and interactions datasets together.
 There are two datasets, so doing this helps us have a singular dataset that addresses all reviews and ratings with the recipes they are from.
 
@@ -65,6 +59,12 @@ The reason for this is that a 0.0 rating is meaningless in the context of our ra
 
 5. Add `is_easy` column, which addresses whether a recipe is tagged as easy or not.
 This is a boolean column checking if each recipe is tagged easy as the tags themselves are simply a list
+I obtain this by extracting it from the `tags` column, using a custom function 
+
+With regards to investigating my topic, I focused on 
+### Univariate Analysis
+### Bivariate Analysis
+### Interesting Aggregates
 
 ---
 
