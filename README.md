@@ -96,7 +96,7 @@ The columns of cleaned dataframe, showing only the relevant ones to my analysis 
 
 First few rows of cleaned dataframe:
 | name                               |     id |   minutes |   n_steps | n_ingredients |   rating |   avg_rating | is_easy   |   calories | sodium |
-|:-----------------------------------|-------:|----------:|----------:|----------------|---------|-------------|----------|-----------|---------|
+|--------------------|-------|----------|----------|----------------|---------|-------------|----------|-----------|---------|
 | impossible macaroni and cheese pie | 275022 |        50 |        11 |               7 |        4 |            3 | True      |      386.1 |       24 |
 | impossible macaroni and cheese pie | 275022 |        50 |        11 |               7 |        1 |            3 | True      |      386.1 |       24 |
 | impossible macaroni and cheese pie | 275022 |        50 |        11 |               7 |        4 |            3 | True      |      386.1 |       24 |
