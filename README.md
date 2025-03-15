@@ -182,7 +182,8 @@ Performing a permutation test, the observed statistic is 42.275133564016954, res
 ></iframe>
 By this result of a p-value > the significance level  of 0.05, I **fail to reject the null hypothesis** and conclude there is evidence to say missingness of description is not dependent on the cooking time of the recipe.
 
-> Examinining `contributor_id`:
+> Examinining `contributor_id`:  
+
 **Null Hypothesis:** The distribution of contributor_id when description is missing is the same as the distribution of contributor_id when description is not missing.
 **Alternate Hypothesis:** The distribution of contributor_id when description is missing is not the same as the distribution of contributor_id when description is not missing.
 **Test Statistic**: TVD.
@@ -248,8 +249,8 @@ My F1-score of my final model was 0.9395431359503216, a significant improvement 
 For my fairness analysis, I am focusing on recipes with cooking times under an hour vs recipes that have cooking times equal to or over an hour.
 I choose to focus on F1-score because it's important to me that the model is correctly predicting if a recipe is easy when it is easy and also not falsely predicting a recipe as easy when it shouldn't be. By focusing on F1-score, I am able to ensure I account for both false positives and negatives.
 
-**Null Hypothesis:**My model is fair. Its F1 score for recipes that have a cooking time under an hour and recipes with a cooking time equal to or over an hour are roughly the same, with any differences a result of random chance.
-**Alternate Hypothesis:** My model is unfair. Its F1 score for recipes that have a cooking time under an hour is not the same as its precision for recipes equal to or over an hour.
+**Null Hypothesis:** My model is fair. Its F1 score for recipes that have a cooking time under an hour and recipes with a cooking time equal to or over an hour are roughly the same, with any differences a result of random chance.  
+**Alternate Hypothesis:** My model is unfair. Its F1 score for recipes that have a cooking time under an hour is not the same as its precision for recipes equal to or over an hour.  
 **Test Statistic:** Absolute difference in F1 Scores between recipes with cooking times below an hour and recipes with cooking times above/equal to an hour.
 
 After performing a permutation test 1000 times, the resulting p-value is 0.0. Using a 0.05 significance level, I **reject the null hypothesis**, which indicates that the model is unfair and predicts differently for recipes with cooking times under 60 minutes and for recipes with cooking times greater than or equal to 60.
