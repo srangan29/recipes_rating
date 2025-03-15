@@ -247,7 +247,7 @@ I choose to focus on F1-score because it's important to me that the model is cor
 
 **Null Hypothesis:**My model is fair. Its F1 score for recipes that have a cooking time under an hour and recipes with a cooking time equal to or over an hour are roughly the same, with any differences a result of random chance.
 **Alternate Hypothesis:** My model is unfair. Its F1 score for recipes that have a cooking time under an hour is not the same as its precision for recipes equal to or over an hour.
-**Test Statistic:** Absolute difference in F1 Scores between recipes with cooking times below an hour and recipes with cooking times above an hour.
+**Test Statistic:** Absolute difference in F1 Scores between recipes with cooking times below an hour and recipes with cooking times above/equal to an hour.
 
 After performing a permutation test 1000 times, the resulting p-value is 0.0. Using a 0.05 significance level, I **reject the null hypothesis**, which indicates that the model is unfair and predicts differently for recipes with cooking times under 60 minutes and for recipes with cooking times greater than or equal to 60.
 
