@@ -96,7 +96,7 @@ The columns of cleaned dataframe, showing only the relevant ones to my analysis 
 
 First few rows of cleaned dataframe:
 | name                               |     id |   minutes |   n_steps |   n_ingredients |   rating |   avg_rating | is_easy   |   calories |   sodium |
-|:-----------------------------------|-------:|----------:|----------:|----------------:|---------:|-------------:|:----------|-----------:|---------:|
+|-----------------------------------|-------|----------|----------|----------------|---------|-------------|:----------|-----------|---------|
 | impossible macaroni and cheese pie | 275022 |        50 |        11 |               7 |        4 |            3 | True      |      386.1 |       24 |
 | impossible macaroni and cheese pie | 275022 |        50 |        11 |               7 |        1 |            3 | True      |      386.1 |       24 |
 | impossible macaroni and cheese pie | 275022 |        50 |        11 |               7 |        4 |            3 | True      |      386.1 |       24 |
@@ -149,7 +149,7 @@ Even a recipe with 2 ingredients had a mean over 60 minutes, which may be a sign
  
 A table of means of the data for recipes tagged easy vs not easy:
 |   is_easy |   n_steps |   n_ingredients |   calories |   sodium |
-|----------:----------:----------------:-----------:---------:|
+|----------|----------|----------------|-----------|---------|
 |False |  12.6056  |        10.7953  |    481.764 |  30.0692 |
 | True |  8.15922 |         7.83345 |    374.83  |  28.6819 |
 
