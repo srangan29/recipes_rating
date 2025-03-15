@@ -43,8 +43,6 @@ The initial data has been given split into two datasets: `recipe` and
 | `rating` | Rating given |
 | `review` | Review text |
 
----
-
 ## Data Cleaning and Explanatory Data Analysis
 ### Data Cleaning
 1. Left merge the recipes and interactions datasets together.
@@ -153,7 +151,6 @@ A table of means of the data for recipes tagged easy vs not easy:
 |----------:|----------:|----------------:|-----------:|---------:|
 |False |  12.6056  |        10.7953  |    481.764 |  30.0692 |
 | True |  8.15922 |         7.83345 |    374.83  |  28.6819 |
----
 
 ## Assessment of Missingness
 
@@ -218,8 +215,6 @@ Performing a permutation test by shuffling the `is_easy` column 1000 times, the 
 
 By this result and a significance level of 0.05, I **reject the null hypothesis** and conclude there is evidence to say there is a difference in how people rate "easy" recipes vs "non-easy" recipes.
 
----
-
 ## Framing a Prediction Problem
 With the knowledge that easy vs non-easy recipes do in fact differ, I am now interested in **predicting if a recipe is tagged easy or not.** Perhaps, for easier searching, there could be an automatic tagging system with regards to "easy" recipes. Therefore, I will be performing a binary classification.
 
@@ -227,15 +222,11 @@ To have an optimal predictor, I would be focusing on F1-score because it would b
 
 At the time of each prediction, I would know `n_ingredients`, `n_steps`, `calories`, `sodium` and `minutes` as these are all components of the initial recipe itself.
 
----
-
 ## Baseline Model
 For my baseline model, I utilized a Random Forest Classifier with the following features: `n_steps` (quantitative) and `n_ingredients` (quantitative).
 I utilized a QuantileTransformer on both pieces of data as the graphs in my Univariate Analyis showed that both held skewed distributions. I felt there is a neglible difference between a recipe with, for example, one ingredient vs three, or three steps vs five, and went with this transformation.
 
 My F1-score for my baseline was 0.7448865249286579 which wasn't that bad for only two features, but had room for improvement. Considering F1-score takes into account accuracy, precision, and recall, it's quite a good starting point for being optimal. 
-
----
 
 ## Final Model
 For my final model, I included three other features: `calories`, `sodium`, and `minutes`. 
@@ -249,8 +240,6 @@ n_estimators=100, random_state=42, the hyperparameter max_depth having been foun
 Instead of a QuantileTransformer for `minutes`, `calories` and `sodium`, however, I utilized a RobustScaler. I felt it was more appropriate to handle nutritional information in a way that would standardize it while also handling the outliers, rather than transforming it into quantiles. For `minutes`, most minutes listed were in multiples of 5, so transforming into quantiles felt like it took away from the miniutual differences in whether a recipe was listed as 50, 55, or 45.
 
 My F1-score of my final model was 0.935879420770038, a significant improvement from my baseline as it is much closer to 1, meaning my precision and recall are also close to 1.
-
----
 
 ## Fairness Analysis
 For my fairness analysis, I am focusing on recipes with cooking times under an hour vs recipes that have cooking times equal to or over an hour.
