@@ -173,7 +173,7 @@ Utilizing a significance level of **0.05** for all tests.
 **Alternate Hypothesis:** The missingness of description is dependent on the cooking time of the recipe.
 **Test Statistic**: Absolute difference of the mean in the cooking time of the distribution of the group where description is missing vs distribution of the group where description is not missing.
 
-Performing a permutation test, the observed statistic is 42.275133564016954, resulting in a p-value of 0.458. Below is the empirical distribution of the TVD for the test.
+Performing a permutation test, the observed statistic is 42.275133564016954, resulting in a p-value of 0.458. Below is the empirical distribution of the absolute mean differences from the test.
 <iframe
   src="assets/missing_min_fig.html"
   width="800"
