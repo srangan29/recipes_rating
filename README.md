@@ -1,8 +1,6 @@
 # Easy Work Makes the Recipe Work (Or Does It?): An Exploration into Recipes and the Influence of Perceived Easiness
 Author: Sahana Rangan
 
----
-
 ## Introduction
 
 What kind of people do you think are the ones looking up recipes online?
