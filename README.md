@@ -235,12 +235,12 @@ The main reason for these features is that logically, the more time a recipe tak
 Additionally, an `easy` recipe may not necessarily care as much for nutritional value. For this reason, `calories` and `sodium` could potentially also be a sign of a recipe tagged easy or not, as it may be an easy recipe does not have as much health factor tied into it (thus less calories or less sodium).
 
 
-My Random Forest Classifier utilized the following parameters: max_depth=22,
+My Random Forest Classifier utilized the following parameters: max_depth=62,
 n_estimators=100, random_state=42, the hyperparameter max_depth having been found using GridSearchCV.
 
 Instead of a QuantileTransformer for `minutes`, `calories` and `sodium`, however, I utilized a RobustScaler. I felt it was more appropriate to handle nutritional information in a way that would standardize it while also handling the outliers, rather than transforming it into quantiles. For `minutes`, most minutes listed were in multiples of 5, so transforming into quantiles felt like it took away from the miniutual differences in whether a recipe was listed as 50, 55, or 45.
 
-My F1-score of my final model was 0.935879420770038, a significant improvement from my baseline as it is much closer to 1, meaning my precision and recall are also close to 1.
+My F1-score of my final model was 0.9395431359503216, a significant improvement from my baseline as it is much closer to 1, meaning my precision and recall are also close to 1.
 
 ## Fairness Analysis
 For my fairness analysis, I am focusing on recipes with cooking times under an hour vs recipes that have cooking times equal to or over an hour.
